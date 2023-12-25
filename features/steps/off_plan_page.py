@@ -11,20 +11,20 @@ def Verify_right_page_opens(context):
     context.app.off_plan_page.Verify_right_page_opens()
 
 
-@then('Filter by sale status of Newly Launch')
-def filter_sale_status_with_Newly_Lunch(context):
-    context.app.off_plan_page.filter_sale_status_with_Newly_Lunch()
-    context.app.off_plan_page.click_Newly_Lunch()
+@then('Filter by sale status of Newly Launched')
+def filter_sale_status_with_Newly_Lunched(context):
+    context.app.off_plan_page.filter_sale_status_with_Newly_Lunched()
+    context.app.off_plan_page.click_Newly_Lunched()
 
 
 
-@then('click on Newly Lunch')
+@then('click on Newly Lunched')
 def click_Newly_Lunch(context):
-    context.app.off_plan_page.click_Newly_Lunch()
+    context.app.off_plan_page.click_Newly_Lunched()
 
-@then('Verify each product contains the Newly Launch tag')
-def Verify_product_contains_Newly_Launch_tag(context):
-    context.app.off_plan_page.Verify_product_contains_Newly_Launch_tag('Newly Launch')
+@then('Verify each product contains the Newly Launched tag')
+def Verify_product_contains_Newly_Launched_tag(context):
+    context.app.off_plan_page.Verify_product_contains_Newly_Launched_tag('Newly Launched')
 
 
 

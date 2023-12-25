@@ -18,7 +18,8 @@ class Page:
 
     def click(self, *locator):
         self.driver.find_element(*locator).click()
-        #logger.info(f'Clicking on {locator}')
+         #logger.info(f'Clicking on {locator}')
+
 
     def find_element(self, *locator):
         #logger.info(f'Searching for element {locator}')
@@ -71,4 +72,6 @@ class Page:
             EC.invisibility_of_element_located(locator),
             message=f'The element did not appear locator: {locator}'
         )
+
+
 

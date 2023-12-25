@@ -5,12 +5,10 @@ from behave import given, when, then
 from time import sleep
 
 
-
 @given('Open the login page')
 def open_login_page(context):
     context.app.login_page.open_login_page()
     sleep(5)
-
 
 
 @when('Log in to the page')

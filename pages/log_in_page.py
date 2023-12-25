@@ -5,11 +5,6 @@ from pages.base_page import Page
 
 
 
-
-
-
-
-
 class LogInPage(Page):
     EMAIL_FIELD = (By.ID,'email-2')
     PASSWORD_FIELD = (By.ID,'field')

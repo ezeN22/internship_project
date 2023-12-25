@@ -6,6 +6,6 @@ Feature: Filter by sale status
     When Log in to the page
     When Click on “off plan” at the left side menu
     Then Verify the right page opens
-    Then Filter by sale status of Newly Launch
-    Then Verify each product contains the Newly Launch tag
+    Then Filter by sale status of Newly Launched
+    Then Verify each product contains the Newly Launched tag
 
