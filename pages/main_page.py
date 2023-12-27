@@ -14,5 +14,5 @@ class MainPage(Page):
         sleep(5)
 
     def click_off_plan_menu(self):
-        self.click(*self.OFF_PLAN)
-        sleep(5)
+        self.wait_for_element_click(*self.OFF_PLAN)
+

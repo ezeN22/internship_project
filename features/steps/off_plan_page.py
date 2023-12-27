@@ -13,7 +13,7 @@ def Verify_right_page_opens(context):
 
 @then('Filter by sale status of Newly Launched')
 def filter_sale_status_with_Newly_Lunched(context):
-    context.app.off_plan_page.filter_sale_status_with_Newly_Lunched()
+    context.app.off_plan_page.filter_sale_status_with_newly_lunched()
     context.app.off_plan_page.click_Newly_Lunched()
 
 

@@ -18,12 +18,11 @@ class OffPlanPage(Page):
         expected = 'Total projects'
         actual = self.find_element(*self.RIT_PAG_OPENS).text
         assert expected == actual, f'Expected {expected} did not match actual {actual}'
-
         sleep(4)
 
-    def filter_sale_status_with_Newly_Lunched(self):
+    def filter_sale_status_with_newly_lunched(self):
         self.wait_for_element_click(*self.STATUS_WITH_NL)
-        sleep(4)
+
 
     def click_Newly_Lunched(self):
         self.click(*self.NEWLY_LUNCH)

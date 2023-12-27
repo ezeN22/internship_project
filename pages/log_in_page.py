@@ -13,8 +13,7 @@ class LogInPage(Page):
 
 
     def open_login_page(self):
-        self.open_url('https://soft.reelly.io/sign-in')
-        sleep(5)
+        self.wait_for_url_to_change('https://soft.reelly.io/sign-in')
 
     def input_email(self):
         self.input('ezenwitte@gmail.com', *self.EMAIL_FIELD)
@@ -24,7 +23,7 @@ class LogInPage(Page):
 
     def click_continue_btn(self):
         self.wait_for_element_click(*self.LOGIN_BTN)
-        #self.click(*self.LOGIN_BTN)
+
 
 
 
