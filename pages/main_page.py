@@ -11,7 +11,7 @@ class MainPage(Page):
 
     def open_main_page(self):
         self.open_url('https://soft.reelly.io/')
-        sleep(5)
+        sleep(4)
 
     def click_off_plan_menu(self):
         self.wait_for_element_click(*self.OFF_PLAN)

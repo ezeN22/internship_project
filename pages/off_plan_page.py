@@ -26,7 +26,7 @@ class OffPlanPage(Page):
 
     def click_Newly_Lunched(self):
         self.click(*self.NEWLY_LUNCH)
-        sleep(4)
+        sleep(5)
 
 
     def Verify_product_contains_Newly_Launched_tag(self, expected_name):

@@ -30,7 +30,7 @@ class Page:
         return self.driver.find_elements(*locator)
 
     def input(self, text, *locator):
-       # logger.info(f"Inputting text '{text}' for element {locator}")
+        #logger.info(f"Inputting text '{text}' for element {locator}")
         self.driver.find_element(*locator).send_keys(text)
 
     def wait_for_url_to_change(self, initial_url):
