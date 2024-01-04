@@ -21,7 +21,7 @@ def browser_init(context, scenario_name):
     # service = Service(executable_path='C:/Users/18327/Downloads/internship_project/geckodriver.exe')
     # options = FirefoxOptions()
     # context.driver = webdriver.Firefox(options=options)
-    # # context.driver = webdriver.Safari()
+    # context.driver = webdriver.Safari()
     #
     # ## HEADLESS MODE ####
     # options = webdriver.ChromeOptions()
