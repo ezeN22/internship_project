@@ -23,7 +23,7 @@ class LogInPage(Page):
 
     def click_continue_btn(self):
         self.wait_for_element_click(*self.LOGIN_BTN)
-        sleep(5)
+        #sleep(5)
 
 
 

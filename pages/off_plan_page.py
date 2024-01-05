@@ -9,6 +9,7 @@ from pages.base_page import Page
 class OffPlanPage(Page):
     RIT_PAG_OPENS = (By.CSS_SELECTOR, 'div.page-title')
     STATUS_WITH_NL = (By.CSS_SELECTOR, '.filter-button.w-inline-block')
+    STATUS_WITH_NL_MOBILE = (By.CSS_SELECTOR, 'div.filter-button')
     NEWLY_LUNCH = (By.XPATH, "//div[@class='filters-tags']//div[contains(text(), 'Newly Launched')]")
     PDT_NEWLY_LUNCH = (By.CSS_SELECTOR, "[wized='projectStatus']")
 
@@ -20,8 +21,12 @@ class OffPlanPage(Page):
         assert expected == actual, f'Expected {expected} did not match actual {actual}'
         sleep(4)
 
+    # def filter_sale_status_with_newly_lunched(self):
+    #     self.wait_for_element_click(*self.STATUS_WITH_NL)
+
+
     def filter_sale_status_with_newly_lunched(self):
-        self.wait_for_element_click(*self.STATUS_WITH_NL)
+        self.wait_for_element_click(*self.STATUS_WITH_NL_MOBILE)
 
 
     def click_Newly_Lunched(self):
